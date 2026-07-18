@@ -1,0 +1,56 @@
+## 🏗️ System Architecture
+
+```text
+                           +----------------------+
+                           |        User          |
+                           | (Sales Executive)    |
+                           +----------+-----------+
+                                      |
+                                      |
+                                      v
+                    +-------------------------------+
+                    | React + Vite Frontend         |
+                    | Tailwind CSS Dashboard        |
+                    | (Hosted on Vercel)            |
+                    +---------------+---------------+
+                                    |
+                           REST API Request
+                                    |
+                                    v
+                     +------------------------------+
+                     | n8n Webhook                  |
+                     | (Hosted on Render)           |
+                     +--------------+---------------+
+                                    |
+                    +---------------+----------------+
+                    |                                |
+                    v                                v
+        +----------------------+        +-------------------------+
+        | AI Analysis Node     |        | Business Formatter      |
+        | (Gemini/OpenAI)      | -----> | JSON Response Generator |
+        +----------+-----------+        +------------+------------+
+                   |                                 |
+                   +---------------+-----------------+
+                                   |
+                                   v
+                    +-------------------------------+
+                    | PostgreSQL Database           |
+                    | Stores Companies, Leads,      |
+                    | Scores & Outreach Messages    |
+                    +---------------+---------------+
+                                    |
+                                    |
+                                    v
+                    +-------------------------------+
+                    | Respond to Webhook            |
+                    +---------------+---------------+
+                                    |
+                                    |
+                                    v
+                    +-------------------------------+
+                    | React Dashboard               |
+                    | Company Analysis              |
+                    | Lead Score                    |
+                    | Outreach Message              |
+                    +-------------------------------+
+```
