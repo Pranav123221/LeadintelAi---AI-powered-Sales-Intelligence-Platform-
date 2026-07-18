@@ -1,114 +1,230 @@
 # 🚀 LeadIntel AI – AI Powered Sales Intelligence Platform
 
-LeadIntel AI is an AI-powered sales intelligence platform that helps businesses analyze companies, score leads, generate personalized outreach, and store business insights automatically.
+<p align="center">
 
-Built using React, n8n, PostgreSQL, and AI automation.
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-Frontend-purple?logo=vite)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-Styling-38BDF8?logo=tailwindcss)
+![n8n](https://img.shields.io/badge/n8n-Automation-FF6D5A?logo=n8n)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?logo=postgresql)
+![AI Powered](https://img.shields.io/badge/AI-Powered-success)
+
+</p>
 
 ---
 
-## ✨ Features
+# 📌 Overview
+
+LeadIntel AI is an AI-powered Sales Intelligence Platform designed to help sales teams and businesses quickly analyze companies, evaluate lead quality, generate personalized outreach messages, and store business insights automatically.
+
+Instead of manually researching prospects, LeadIntel AI automates the complete workflow using AI and business automation.
+
+---
+
+# ✨ Features
 
 - 🔍 Company Search
 - 🤖 AI Company Analysis
-- 📊 AI Lead Scoring
-- 📝 Personalized Outreach Generation
-- 💼 Business Intelligence Dashboard
-- 🗄 PostgreSQL Database Integration
+- 📈 AI Lead Scoring
+- 💼 Business Insights Generation
+- ✉ Personalized Outreach Message Generation
+- 🗄 PostgreSQL Database Storage
 - ⚡ Automated n8n Workflow
-- 🌐 Responsive React Frontend
+- 📊 Interactive Dashboard
+- 📱 Responsive UI
 
 ---
 
-## 🛠 Tech Stack
+# 🏗️ System Architecture
 
-### Frontend
+```text
+                           +----------------------+
+                           |        User          |
+                           | (Sales Executive)    |
+                           +----------+-----------+
+                                      |
+                                      |
+                                      v
+                    +-------------------------------+
+                    | React + Vite Frontend         |
+                    | Tailwind CSS Dashboard        |
+                    +---------------+---------------+
+                                    |
+                           REST API Request
+                                    |
+                                    v
+                     +------------------------------+
+                     | n8n Webhook                  |
+                     +--------------+---------------+
+                                    |
+                    +---------------+----------------+
+                    |                                |
+                    v                                v
+        +----------------------+        +-------------------------+
+        | AI Company Analysis  | -----> | Business Formatter      |
+        +----------+-----------+        +------------+------------+
+                   |                                 |
+                   +---------------+-----------------+
+                                   |
+                                   v
+                    +-------------------------------+
+                    | PostgreSQL Database           |
+                    | Stores Leads & Analysis       |
+                    +---------------+---------------+
+                                    |
+                                    |
+                                    v
+                    +-------------------------------+
+                    | Respond to Webhook            |
+                    +---------------+---------------+
+                                    |
+                                    |
+                                    v
+                    +-------------------------------+
+                    | React Dashboard               |
+                    | Displays Results              |
+                    +-------------------------------+
+```
+
+---
+
+# ⚙ Workflow
+
+```text
+User
+   │
+   ▼
+Frontend (React)
+   │
+   ▼
+Webhook (n8n)
+   │
+   ▼
+AI Analysis
+   │
+   ▼
+Lead Scoring
+   │
+   ▼
+Business Formatter
+   │
+   ▼
+PostgreSQL
+   │
+   ▼
+JSON Response
+   │
+   ▼
+Dashboard
+```
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
 
 - React
 - Vite
 - Tailwind CSS
 - Axios
 
-### Backend Automation
+## Backend Automation
 
 - n8n
 
-### Database
+## Database
 
 - PostgreSQL
 
-### Deployment
+## AI
 
-- Vercel (Frontend)
-- Render (n8n Backend)
+- Gemini / OpenAI
+
+## Deployment
+
+- Vercel *(Deployment in Progress)*
+- Render *(Planned for n8n)*
 
 ---
 
-## ⚙ Workflow
+# 📂 Project Structure
 
 ```
-User Search
-      │
-      ▼
-React Frontend
-      │
-      ▼
-n8n Webhook
-      │
-      ▼
-AI Analysis
-      │
-      ▼
-Business Formatter
-      │
-      ▼
-PostgreSQL
-      │
-      ▼
-Response to Frontend
+LeadIntel AI
+│
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── assets
+│   │   └── App.jsx
+│   │
+│   ├── public
+│   ├── package.json
+│   └── vite.config.js
+│
+├── screenshots
+│
+└── README.md
 ```
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-### Home Page
+## Home Page
 
-<img width="1885" height="912" alt="Screenshot 2026-07-17 141200" src="https://github.com/user-attachments/assets/86fcefda-0670-4503-bdde-70856315ecbf" />
-
-<img width="1320" height="516" alt="Screenshot 2026-07-17 093211" src="https://github.com/user-attachments/assets/8e203a80-5911-4e99-aa1f-e9ec5cd5dcad" />
-
-<img width="1717" height="767" alt="Screenshot 2026-07-17 081245" src="https://github.com/user-attachments/assets/272a972a-caa2-4308-9cdb-d8b1b7492543" />
-
-
-
-### PostgreSQL Database
-
-<img width="582" height="607" alt="Screenshot 2026-07-17 073437" src="https://github.com/user-attachments/assets/2493aa18-0d17-4f7d-a51a-325d8d36c0b6" />
-
-
-
-
-### n8n Workflow
-
-## main workflow 
-<img width="1862" height="777" alt="Screenshot 2026-07-17 141439" src="https://github.com/user-attachments/assets/291a0517-5b8a-4b9d-ac7a-91bfcaced377" />
-
-## dashbored api workflow
-<img width="1802" height="857" alt="Screenshot 2026-07-17 141400" src="https://github.com/user-attachments/assets/6646d865-782d-41e1-b62a-0a73b09ffafa" />
-
-
+> Add Screenshot
 
 ---
 
-## 🚀 Installation
+## AI Company Analysis
 
-Clone the repository
+> Add Screenshot
+
+---
+
+## Lead Score
+
+> Add Screenshot
+
+---
+
+## Business Analysis
+
+> Add Screenshot
+
+---
+
+## Outreach Message
+
+> Add Screenshot
+
+---
+
+## PostgreSQL Database
+
+> Add Screenshot
+
+---
+
+## n8n Workflow
+
+> Add Screenshot
+
+---
+
+# 🚀 Installation
+
+Clone repository
 
 ```bash
 git clone https://github.com/Pranav123221/LeadintelAi---AI-powered-Sales-Intelligence-Platform-.git
 ```
 
-Go to project folder
+Move to frontend
 
 ```bash
 cd frontend
@@ -120,13 +236,13 @@ Install dependencies
 npm install
 ```
 
-Run development server
+Run project
 
 ```bash
 npm run dev
 ```
 
-Build project
+Production build
 
 ```bash
 npm run build
@@ -134,46 +250,65 @@ npm run build
 
 ---
 
-## 📁 Project Structure
+# 🎯 Business Problem Solved
 
-```
-frontend/
-│
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   └── assets/
-│
-├── package.json
-├── vite.config.js
-└── README.md
-```
+Sales teams spend hours researching companies before reaching out.
+
+LeadIntel AI automates:
+
+- Company Research
+- Business Intelligence
+- Lead Qualification
+- Personalized Outreach
+- Database Management
+
+Result:
+
+- Faster prospect research
+- Better lead prioritization
+- Improved sales productivity
 
 ---
 
-## 🎯 Future Improvements
+# 🔮 Future Enhancements
 
 - CRM Integration
-- LinkedIn Data Enrichment
+- LinkedIn Company Enrichment
 - Email Automation
-- Multi-user Authentication
-- Analytics Dashboard
 - AI Follow-up Suggestions
+- Team Dashboard
+- Authentication
+- Analytics
+- Export Reports
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-**Pranav Sharma**
+## Pranav Sharma
 
-GitHub:
+Aspiring AI & Machine Learning Engineer
+
+GitHub
+
 https://github.com/Pranav123221
 
+LinkedIn
 
-
+(Add your LinkedIn URL)
 
 ---
 
-⭐ If you like this project, don't forget to star the repository.
+# ⭐ Support
+
+If you found this project useful,
+
+⭐ Star this repository
+
+and feel free to fork it for learning.
+
+---
+
+## 📜 License
+
+This project is created for educational and portfolio purposes.
