@@ -176,43 +176,30 @@ LeadIntel AI
 
 ## Home Page
 
-> Add Screenshot
+<img width="1885" height="912" alt="Screenshot 2026-07-17 141200" src="https://github.com/user-attachments/assets/1c2682dc-376e-44a1-8ace-aa84c3ac36da" />
 
----
+<img width="1717" height="767" alt="Screenshot 2026-07-17 081245" src="https://github.com/user-attachments/assets/2ebd587f-ce2a-4adb-ba6a-aa1db0ca3643" />
 
-## AI Company Analysis
+<img width="1566" height="855" alt="Screenshot 2026-07-17 084607" src="https://github.com/user-attachments/assets/52286521-78cc-4f88-9349-79b59f75b0d7" />
 
-> Add Screenshot
 
----
-
-## Lead Score
-
-> Add Screenshot
-
----
-
-## Business Analysis
-
-> Add Screenshot
-
----
-
-## Outreach Message
-
-> Add Screenshot
-
----
 
 ## PostgreSQL Database
 
-> Add Screenshot
+<img width="582" height="607" alt="Screenshot 2026-07-17 073437" src="https://github.com/user-attachments/assets/d6efe19b-ad64-4d85-8eca-080a4757241d" />
+
 
 ---
 
 ## n8n Workflow
 
-> Add Screenshot
+## main workflow
+<img width="1862" height="777" alt="Screenshot 2026-07-17 141439" src="https://github.com/user-attachments/assets/ed77d3e2-14ea-4236-9ce5-ff28221c3aea" />
+
+## dashbored api workflow
+<img width="1802" height="857" alt="Screenshot 2026-07-17 141400" src="https://github.com/user-attachments/assets/6376e919-1d15-4c5c-aa89-ae4c348a6cf0" />
+
+
 
 ---
 
@@ -293,9 +280,7 @@ GitHub
 
 https://github.com/Pranav123221
 
-LinkedIn
 
-(Add your LinkedIn URL)
 
 ---
 
